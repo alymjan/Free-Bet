@@ -57,9 +57,9 @@ app.post('/api/bet', async (req, res) => {
       return res.status(409).json({ error: 'User has already placed their single allowed bet.' });
     }
 
-    return status(201).json({ message: 'Single bet locked successfully', user });
+    return res.status(201).json({ message: 'Single bet locked successfully', user });
   } catch (err) {
-    return status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message });
   }
 });
 
