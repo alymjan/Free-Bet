@@ -1,0 +1,15 @@
+{
+  "name": "transaction-api",
+  "version": "0.1.0",
+  "description": "ACID Transaction Service for Simulated Sports Betting Platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:concurrency": "node src/test-concurrency.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1"
+  }
+}
